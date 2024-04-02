@@ -22,14 +22,18 @@ export default async function UsersPage() {
 
       </TabsContent>
       <TabsContent value="api-route">
+
         <Suspense fallback={<p>Loading API Route Data...</p>}>
           <User2 />
         </Suspense>
+
       </TabsContent>
       <TabsContent value="server-action">
+
         <Suspense fallback={<p>Loading Server Action Data...</p>}>
           <User3 />
         </Suspense>
+
       </TabsContent>
     </Tabs>
 
